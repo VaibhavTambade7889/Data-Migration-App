@@ -1,1 +1,1 @@
-FILENAME="student.csv"
+FILENAME="resources/student.csv"

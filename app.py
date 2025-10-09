@@ -1,12 +1,30 @@
-from importlib import resources
-
-import student
-from config.csvconf.configuration import FILENAME
-from student.load import load_from_csv
-from student.save import save_to_csv
-from student.show import display_student_information
-
 print("Welcome to Data Migration App")
+
+print("Byee")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 '''
@@ -18,4 +36,18 @@ print("Welcome to Data Migration App")
     L = load_from_csv(FILENAME)
     display_student_information(L)    
     
+    #Test Code : Validation of rno, name, per.
+    rno = get_rno()
+    name = get_name()
+    per  = get_per()
+    
+    L = [rno, name, per] #Packing of List
+    print(L)
+    
+    Test Case : Load from User
+    n = 2
+    L = load_from_user(3)
+    save_to_csv(FILENAME, L)
+    display_student_information(L)
+            
 '''
